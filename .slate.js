@@ -23,7 +23,7 @@ var bottomRightTwoThird = slate.operation("move", {
     "x" : screenWidth / 3,
     "y" : screenHeight * 2 / 3,
     "width" : "screenSizeX*2/3",
-    "height" : "screenSizeY/3"
+    "height" : "screenSizeY*2/3"
 });
 var bottomLeftTwoThird = slate.operation("move", {
     "x" : "screenOriginX",
@@ -56,12 +56,14 @@ var halfBottom = slate.operation("move", {
     "height" : "screenSizeY/2"
 });
 
-slate.bind("m:ctrl,alt,cmd", function() { fullscreen.run() });
-slate.bind("up:ctrl,alt,shift", function() { topRightTwoThird.run() });
-slate.bind("left:ctrl,alt,shift", function() { topRightOneThird.run() });
-slate.bind("right:ctrl,alt,shift", function() { bottomRightTwoThird.run() });
-slate.bind("down:ctrl,alt,shift", function() { bottomLeftTwoThird.run() });
-slate.bind("left:ctrl,alt,cmd", function() { halfLeft.run() });
-slate.bind("right:ctrl,alt,cmd", function() { halfRight.run() });
-slate.bind("up:ctrl,alt,cmd", function() { halfTop.run() });
-slate.bind("down:ctrl,alt,cmd", function() { halfBottom.run() });
+slate.bindAll({
+    "m:ctrl,alt,cmd"        : fullscreen,
+    "up:ctrl,alt,shift"     : topRightTwoThird,
+    "left:ctrl,alt,shift"   : topRightOneThird,
+    "right:ctrl,alt,shift"  : bottomRightTwoThird,
+    "down:ctrl,alt,shift"   : bottomLeftTwoThird,
+    "left:ctrl,alt,cmd"     : halfLeft,
+    "right:ctrl,alt,cmd"    : halfRight,
+    "up:ctrl,alt,cmd"       : halfTop,
+    "down:ctrl,alt,cmd"     : halfBottom
+})

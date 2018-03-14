@@ -23,7 +23,7 @@ var bottomRightTwoThird = slate.operation("move", {
     "x" : screenWidth / 3,
     "y" : screenHeight * 2 / 3,
     "width" : "screenSizeX*2/3",
-    "height" : "screenSizeY*2/3"
+    "height" : "screenSizeY/3"
 });
 var bottomLeftTwoThird = slate.operation("move", {
     "x" : "screenOriginX",

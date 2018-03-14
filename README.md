@@ -28,6 +28,10 @@ Big thanks to [philc](https://github.com/philc) for the Window Hints idea (and i
 
 **Note:** You must turn on the Accessibility API by checking System Preferences > Universal Access > Enable access for assistive devices
 
+### Homebrew ###
+
+* `brew cask install slate`
+
 ### Direct Download ###
 
 * [`.dmg`](http://slate.ninjamonkeysoftware.com/Slate.dmg)

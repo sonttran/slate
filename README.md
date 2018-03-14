@@ -32,6 +32,12 @@ Big thanks to [philc](https://github.com/philc) for the Window Hints idea (and i
 
 * `brew cask install slate`
 
+### Docs ###
+
+* [Config](https://github.com/jigish/slate/wiki/JavaScript-Configs)
+* [Layout](https://github.com/jigish/slate/wiki/Layouts)
+* [Example](https://gist.github.com/gfreezy/6060661)
+
 ### Direct Download ###
 
 * [`.dmg`](http://slate.ninjamonkeysoftware.com/Slate.dmg)

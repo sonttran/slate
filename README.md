@@ -709,3 +709,12 @@ Please send all questions, bug reports, suggestions, or general commentary to [J
     [
     ]
 
+# docker, compose kubernetes shorcuts
+```
+alias k=kubectl
+alias d=docker
+alias dc=docker-compose
+alias kcd='kubectl config set-context $(kubectl config current-context) --namespace '
+alias kd='kubectl describe'
+alias g=gcloud
+```

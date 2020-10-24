@@ -717,4 +717,15 @@ alias dc=docker-compose
 alias kcd='kubectl config set-context $(kubectl config current-context) --namespace '
 alias kd='kubectl describe'
 alias g=gcloud
+alias ke='kubectl exec -it '
+alias de='docker exec -it '
+alias kl='kubectl logs -f --tail=100 '
+alias dl='docker logs -f --tail=100 '
+
+## microk8s
+alias k=microk8s.kubectl
+alias kcd='microk8s.kubectl config set-context $(kubectl config current-context) --namespace '
+alias kd='microk8s.kubectl describe'
+alias kl='microk8s.kubectl logs -f --tail=100 '
+alias ke='microk8s.kubectl exec -it '
 ```

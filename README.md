@@ -724,7 +724,7 @@ alias dl='docker logs -f --tail=100 '
 
 ## microk8s
 alias k=microk8s.kubectl
-alias kcd='microk8s.kubectl config set-context $(kubectl config current-context) --namespace '
+alias kcd='microk8s.kubectl config set-context $(microk8s.kubectl config current-context) --namespace '
 alias kd='microk8s.kubectl describe'
 alias kl='microk8s.kubectl logs -f --tail=100 '
 alias ke='microk8s.kubectl exec -it '
